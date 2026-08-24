@@ -3,68 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rekzionist — Логи</title>
+
+<title>RIK WOR — Логи</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#0d0d0d;color:#fff;line-height:1.6}
-header{padding:45px 20px;text-align:center;background:linear-gradient(135deg,#1b5e20,#080808)}
-h1{font-size:35px}
-header p{color:#bbb}
-.container{max-width:900px;margin:auto;padding:30px 15px}
-.log{background:#1b1b1b;border-left:5px solid #43a047;border-radius:12px;padding:18px;margin-bottom:14px}
-.player{font-size:20px;font-weight:bold;color:#66bb6a}
-.info{margin-top:7px}
-.rule{color:#aaa}
-.punishment{color:#ffb74d;font-weight:bold}
-.moderator{color:#64b5f6}
-.date{color:#777;font-size:13px;margin-top:9px}
-.btn{display:inline-block;margin-top:15px;padding:12px 20px;background:#43a047;color:#fff;text-decoration:none;border-radius:10px;font-weight:bold}
-footer{text-align:center;padding:25px;color:#777}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #1b5e20, #080808);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #66bb6a;
+}
+
+header p {
+    color: #aaa;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+.log {
+    background: #1b1b1b;
+    border-left: 5px solid #43a047;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.log h2 {
+    color: #66bb6a;
+    margin-top: 0;
+}
+
+.log p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.moderation {
+    border-left-color: #d32f2f;
+}
+
+.moderation h2 {
+    color: #ff5252;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #43a047;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.donate {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.donate button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #8b0000;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.development {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>📋 Логи наказаний</h1>
-<p>История нарушений и действий администрации</p>
+    <h1>RIK WOR</h1>
+    <p>📜 Логи и правила сервера</p>
 </header>
 
 <div class="container">
 
-<div class="log">
-<div class="player">👤 Player123</div>
-<div class="info">Правило: <span class="rule">1.1 — Оскорбление в матной форме</span><br>
-Наказание: <span class="punishment">Мут на 1 день</span><br>
-Модератор: <span class="moderator">Moderator</span></div>
-<div class="date">25.08.2026 • 15:30</div>
+    <div class="log">
+        <h2>1. Оскорбления</h2>
+
+        <p>1.1 — Оскорбление в матной форме — мут на 1 день.</p>
+        <p>1.2 — Оскорбление — мут на 3–6 часов.</p>
+        <p>1.3 — Оскорбление администрации — бан на 14 дней / мут на 50 дней.</p>
+    </div>
+
+    <div class="log">
+        <h2>2. Нарушения проекта</h2>
+
+        <p>2.1 — Упоминание другого сервера — бан на 30–40 дней.</p>
+        <p>2.2 — Игра с читами — бан на 50 дней.</p>
+        <p>2.3 — Отказ от проверки — бан на 50 дней.</p>
+        <p>2.4 — Признание на проверке — бан на 30 дней.</p>
+        <p>2.5 — Признание в чате — бан на 10 дней.</p>
+        <p>2.6 — Оскорбление проекта — бан на 60 дней.</p>
+    </div>
+
+    <div class="log">
+        <h2>3. Взлом и мошенничество</h2>
+
+        <p>3.1 — Взлом аккаунта — бан на 50 дней по IP.</p>
+        <p>3.2 — Попытка взлома аккаунта — бан на 50 дней.</p>
+        <p>3.3 — Выдача себя за администрацию — бан на 40 дней.</p>
+        <p>3.4 — Обмен ресурсов за реальные деньги — бан на 50 дней по IP.</p>
+    </div>
+
+    <div class="log moderation">
+        <h2>⚠️ Только для модерации</h2>
+
+        <p>4.1 — Взятка — снятие с должности.</p>
+        <p>4.2 — Бан без проверки — снятие с должности.</p>
+        <p>4.3 — Проведение проверки без записи — снятие с должности.</p>
+        <p>4.4 — Мут без доказательств — снятие с должности.</p>
+        <p>4.5 — Разбан без разрешения администрации — снятие с должности.</p>
+    </div>
+
+    <div class="donate">
+        <button disabled>💰 Донат</button>
+
+        <p class="development">
+            🔴 В РАЗРАБОТКЕ
+        </p>
+    </div>
+
+    <div style="text-align:center;">
+        <a class="button" href="index.html">
+            ← На главную
+        </a>
+    </div>
+
 </div>
 
-<div class="log">
-<div class="player">👤 Player456</div>
-<div class="info">Правило: <span class="rule">1.2 — Оскорбление</span><br>
-Наказание: <span class="punishment">Мут на 6 часов</span><br>
-Модератор: <span class="moderator">Admin</span></div>
-<div class="date">25.08.2026 • 15:42</div>
-</div>
+<footer>
+    © 2026 RIK WOR • Gift Hub
+</footer>
 
-<div class="log">
-<div class="player">👤 Hacker</div>
-<div class="info">Правило: <span class="rule">2.2 — Игра с читами</span><br>
-Наказание: <span class="punishment">Бан на 50 дней</span><br>
-Модератор: <span class="moderator">Admin</span></div>
-<div class="date">25.08.2026 • 16:10</div>
-</div>
-
-<div class="log">
-<div class="player">👤 FakeAdmin</div>
-<div class="info">Правило: <span class="rule">3.3 — Выдача себя за администрацию</span><br>
-Наказание: <span class="punishment">Бан на 40 дней</span><br>
-Модератор: <span class="moderator">Moderator</span></div>
-<div class="date">25.08.2026 • 16:25</div>
-</div>
-
-<a class="btn" href="index.html">← На главную</a>
-</div>
-
-<footer>© 2026 REKZIONIST</footer>
 </body>
 </html>
